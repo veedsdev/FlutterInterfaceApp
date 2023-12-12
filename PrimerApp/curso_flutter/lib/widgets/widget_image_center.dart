@@ -9,16 +9,11 @@ class WidgetImageCenter extends StatelessWidget {
       backgroundColor: Colors.indigo,
       appBar: AppBar(
         backgroundColor: const Color(0xff8b0000),
-        title: const Text('Widget Scaffold'),
+        title: const Text('Mi primer pantalla'),
         actions: [
-          const Text('Hola'),
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.add),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.remove),
+            icon: const Icon(Icons.person),
           ),
         ],
       ),
@@ -33,9 +28,16 @@ class WidgetImageCenter extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(color: Colors.yellow, width: 5),
             ),
-            child: Image.network(
-              'https://1.bp.blogspot.com/-WboSNJbj5Rw/UPlWytln02I/AAAAAAAABMM/0XnLFjPm9MU/s1600/Harry-Potter-Pics-harry-potter-7692816-1920-2560%5B1%5D.jpg',
-              fit: BoxFit.fill,
+            child: Container(
+              // width: 100,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.green, width: 5),
+              ),
+              child: const Image(
+                image: NetworkImage(
+                    'https://1.bp.blogspot.com/-WboSNJbj5Rw/UPlWytln02I/AAAAAAAABMM/0XnLFjPm9MU/s1600/Harry-Potter-Pics-harry-potter-7692816-1920-2560%5B1%5D.jpg'),
+                fit: BoxFit.fill,
+              ),
             ),
           ),
         ),
