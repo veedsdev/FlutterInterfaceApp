@@ -37,7 +37,7 @@ class WidgetImageCenter extends StatelessWidget {
               child: const Image(
                 image: NetworkImage(
                     'https://1.bp.blogspot.com/-WboSNJbj5Rw/UPlWytln02I/AAAAAAAABMM/0XnLFjPm9MU/s1600/Harry-Potter-Pics-harry-potter-7692816-1920-2560%5B1%5D.jpg'),
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
               ),
             ),
           ),
