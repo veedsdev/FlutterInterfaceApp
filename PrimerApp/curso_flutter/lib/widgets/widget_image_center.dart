@@ -19,9 +19,10 @@ class WidgetImageCenter extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 300,
+          width: double.infinity,
+          height: double.infinity,
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.red, width: 5),
+            border: Border.all(color: Colors.blue, width: 5),
           ),
           child: Container(
             // width: 200,
