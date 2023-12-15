@@ -3,6 +3,7 @@
 //import 'package:curso_flutter/widgets/widget_scaffold.dart';
 //import 'package:curso_flutter/widgets/widget_text.dart';
 //import 'package:curso_flutter/widgets/widget_icon.dart';
+import 'package:curso_flutter/screens/profile_screen.dart';
 import 'package:curso_flutter/widgets/widget_image_center.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: WidgetImageCenter(),
+      home: ProfileScreen(),
     );
   }
 }
